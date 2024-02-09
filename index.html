@@ -15,7 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home" onclick="location.reload();">
+            <a class="navbar-brand" href="#" onclick="reloadAndScrollToHome();">
                 <img src="assets/logo.png" alt="nadians" width="80">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -559,6 +559,13 @@
     </script>
 
     <script src="offcanvas.js"></script>
+
+    <script>
+        function reloadAndScrollToHome() {
+            location.reload(); 
+            document.getElementById('home').scrollIntoView(); 
+        }
+    </script>
 
 
 </body>
